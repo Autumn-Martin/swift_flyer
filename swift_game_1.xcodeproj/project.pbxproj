@@ -101,6 +101,7 @@
 		C8B677AF235BE2CB00FD2A02 /* swift_game_1 */ = {
 			isa = PBXGroup;
 			children = (
+				C8B677E4235BEB2500FD2A02 /* Content */,
 				C8B677B0235BE2CB00FD2A02 /* AppDelegate.swift */,
 				C8B677B2235BE2CB00FD2A02 /* GameScene.sks */,
 				C8B677B6235BE2CB00FD2A02 /* GameScene.swift */,
@@ -129,6 +130,13 @@
 				C8B677D8235BE2CD00FD2A02 /* Info.plist */,
 			);
 			path = swift_game_1UITests;
+			sourceTree = "<group>";
+		};
+		C8B677E4235BEB2500FD2A02 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
