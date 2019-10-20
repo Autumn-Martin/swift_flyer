@@ -14,6 +14,7 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         createSky()
+        createBackground()
         createPlayer()
     }
     
@@ -52,5 +53,25 @@ class GameScene: SKScene {
         
         bottomSky.zPosition = -40
         topSky.zPosition = -40
+    }
+    
+    func createBackground() {
+        let backgroundTexture = SKTexture(imageNamed: "background")
+        
+        for i in 0 ... 1 {
+            let background = SKSpriteNode(texture: backgroundTexture)
+            background.zPosition = -30
+            background.anchorPoint = CGPoint.zero
+            background.position = CGPoint(x: (backgroundTexture.size().width * CGFloat(i)) - CGFloat(1 * i), y: 100)
+            
+            addChild(background)
+            
+            let moveLeft = SKAction.moveBy(x: -backgroundTexture.size().width, y: 0, duration: 20)
+            let moveReset = SKAction.moveBy(x: backgroundTexture.size().width, y:0, duration: 0)
+            let moveLoop = SKAction.sequence([moveLeft, moveReset])
+            let moveForever = SKAction.repeatForever(moveLoop)
+            
+            background.run(moveForever)
+        }
     }
 }
