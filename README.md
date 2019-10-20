@@ -12,7 +12,7 @@ To achieve this, this project follows a tutorial by [Hacking with Swift](https:/
 Swift, Xcode, SpriteKit
 
 ## Getting started
-First, clone this repo via `git clone ` Open the project in Xcode & start developing!
+First, clone this repo via `git clone git@github.com:Autumn-Martin/swift_flyer.git`. Open the project in Xcode & start developing!
 
 ### Playing the game
 To play the game, you can start the simulator by clicking on the play icon in the top left in Xcode.
